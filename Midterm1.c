@@ -53,3 +53,5 @@ int main(){
    printf("Total Price (after increase) $%.2lf\n", totalAfter);
   
 }
+
+//Problem 13 on midterm.
