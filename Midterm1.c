@@ -54,4 +54,88 @@ int main(){
   
 }
 
-//Problem 13 on midterm.
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+int loan;
+int deposit;
+
+printf("Enter Loan Amount: ");
+
+scanf("%d", &loan);
+
+printf("Loan amount: $%d", loan);
+
+if (loan < 5000) {
+
+deposit = loan * 0.10;
+
+printf("\nDeposit Amount Required: $%d", deposit);
+
+} else if (loan < 10000) {
+
+deposit = 100 + (loan * 0.05);
+
+printf("\nDeposit Amount Required: $%d", deposit);
+
+} else if (loan < 20000) {
+
+deposit = 400 + (loan * 0.03);
+
+printf("\nDeposit Amount Required: $%d", deposit);
+  
+} else {   
+
+printf("\nLoans in excess of $20000 are not allowed.");
+
+}
+  return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+
+#include <math.h>
+
+
+ 
+
+
+int main() {
+
+int i;
+float valuesCelsius[20];
+float valuesFahrenheit[20];
+float add = 0;
+float avg;
+
+printf("Enter 20 celcius temperatures: ");
+  
+for (i = 1; i <= 20; i++) {
+scanf("%f", &valuesCelsius[i]);
+}
+
+for (i = 1; i < 20; i++)
+valuesFahrenheit[i] = (1.8 * valuesCelsius[i]) + 32;
+
+for (i = 1; i < 20; i++)
+
+printf("\n%.2f  in Celcius is = %.2f Fahrenheit", valuesCelsius[i], valuesFahrenheit[i]);
+printf("\nAll temperatures Processed");
+  
+for (i = 1; i < 20; i++)
+{
+    add += valuesFahrenheit[i];
+}
+avg = add / 20;
+
+printf("\nThe average of all temperatures in Fahrenheit is: %.2f", avg);
+  
+  return 0;
+}
