@@ -18,7 +18,7 @@ int main(void) {
    
 
    if (numItemsPointer == NULL) {
-      printf("Items is negative\n");
+      printf("Items are negative\n");
    }
    else {
       printf("Items: %d\n", *numItemsPointer);
